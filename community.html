@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PawLux Community</title>
+  <meta name="description" content="Join a caring network of dog lovers and pros. Share stories and ask expert Q&A." />
+  <meta property="og:title" content="PawLux Community" />
+  <meta property="og:description" content="Belonging, shared journeys, and expert Q&A for dog families." />
+  <meta property="og:image" content="/images/og/pawlux-community.jpg" />
+  <meta name="theme-color" content="#7C3AED" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .card { border-radius: 16px; }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Website",
+    "name": "PawLux Community"
+  }
+  </script>
+</head>
+<body class="bg-neutral-50 text-neutral-900">
+  <header class="fixed w-full top-0 bg-white/90 backdrop-blur-md shadow-md z-40">
+    <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="/index.html" class="text-2xl font-bold text-primary">PawLux</a>
+      <div class="hidden md:flex gap-8">
+        <a href="/index.html">Home</a>
+        <a href="/guides.html">Guides</a>
+        <a href="/shop.html">Shop</a>
+        <a href="/community.html" class="text-primary">Community</a>
+        <a href="/about.html">About</a>
+      </div>
+    </nav>
+  </header>
+  <main id="main-content" class="pt-28" aria-label="Main content">
+    <section class="py-16 bg-neutral-50" aria-label="Community Stories">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-8">
+          <h2 class="text-3xl md:text-4xl font-heading font-bold">Community Stories</h2>
+          <p class="text-neutral-600">Real journeys from dog families embracing PawLux.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {story_card_1}
+          <article class="card bg-white rounded-xl p-4 shadow">
+            <img src="/images/community/story1.jpg" alt="Mika and owner" class="w-full h-40 object-cover rounded mb-2" />
+            <p class="text-sm text-neutral-700">"A gentle routine that transformed our mornings."</p>
+            <div class="text-xs text-neutral-500 mt-1">Mika, 2y</div>
+          </article>
+          <article class="card bg-white rounded-xl p-4 shadow">
+            <img src="/images/community/story2.jpg" alt="Rex with gear" class="w-full h-40 object-cover rounded mb-2" />
+            <p class="text-sm text-neutral-700">"Premium products that my picky pup adores."</p>
+            <div class="text-xs text-neutral-500 mt-1">Rex, 4y</div>
+          </article>
+          <article class="card bg-white rounded-xl p-4 shadow">
+            <img src="/images/community/story3.jpg" alt="Nova puppy" class="w-full h-40 object-cover rounded mb-2" />
+            <p class="text-sm text-neutral-700">"Clear guidance helped us sail through puppyhood."</p>
+            <div class="text-xs text-neutral-500 mt-1">Nova, 1y</div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="py-12" aria-label="Expert Q&A">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-3xl font-heading font-bold text-center mb-6">Ask a Vet/Trainer</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-white rounded-xl p-6 border border-neutral-200">
+            <h3 class="font-semibold mb-2">How often should I groom my dog?</h3>
+            <p class="text-sm text-neutral-600">Most dogs benefit from grooming every 4-6 weeks depending on coat type.</p>
+          </div>
+          <div class="bg-white rounded-xl p-6 border border-neutral-200">
+            <h3 class="font-semibold mb-2">What is a simple training routine for a puppy?</h3>
+            <p class="text-sm text-neutral-600">Short daily sessions (5-10 minutes) with positive reinforcement.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-neutral-900 text-white py-8">
+    <div class="max-w-7xl mx-auto px-6 text-center">© PawLux Community</div>
+  </footer>
+  <script>
+    // reveal on scroll
+    const elems = document.querySelectorAll('section, footer');
+    elems.forEach(e => { e.style.opacity = '0'; e.style.transform = 'translateY(20px)'; });
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.style.opacity = 1; e.target.style.transform = 'none'; } });
+    }, { threshold: 0.1 });
+    elems.forEach(e => io.observe(e));
+  </script>
+</body>
+</html>
