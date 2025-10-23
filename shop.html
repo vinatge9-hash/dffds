@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PawLux Shop & Subscriptions</title>
+  <meta name="description" content="Shop curated gear and care plans for every dog moment." />
+  <meta property="og:title" content="PawLux Shop" />
+  <meta property="og:description" content="Premium gear and care plans that simplify daily dog care." />
+  <meta property="og:image" content="/images/og/pawlux-shop.jpg" />
+  <meta name="theme-color" content="#7C3AED" />
+  <link rel="icon" href="/favicon.ico" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { primary: '#7C3AED', secondary: '#14B8A6' },
+          fontFamily: { display: ['Poppins','ui-sans-serif'], heading: ['Montserrat','ui-sans-serif'], body: ['Inter','ui-sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <style>
+    .gradient { background: linear-gradient(135deg, #7C3AED 0%, #14B8A6 100%); color: white; }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "PawLux Shop",
+    "description": "Shop curated gear and care plans for every dog moment.",
+    "image": "/images/og/pawlux-shop.jpg"
+  }
+  </script>
+</head>
+<body class="bg-neutral-50 text-neutral-900">
+  <header class="fixed w-full top-0 z-40 bg-white/90 backdrop-blur-md shadow-md">
+    <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="/index.html" class="text-2xl font-bold text-primary">PawLux</a>
+      <div class="hidden md:flex gap-8">
+        <a href="/index.html">Home</a>
+        <a href="/guides.html">Guides</a>
+        <a href="/shop.html" class="text-primary">Shop</a>
+        <a href="/community.html">Community</a>
+        <a href="/about.html">About</a>
+      </div>
+    </nav>
+  </header>
+  <main id="main-content" class="pt-28" aria-label="Main content">
+    <!-- Hero -->
+    <section class="relative bg-gradient-to-br from-primary to-secondary text-white py-20">
+      <div class="absolute inset-0 opacity-40" aria-hidden="true"></div>
+      <div class="relative z-10 max-w-5xl mx-auto px-6 text-center">
+        <h1 class="text-3xl md:text-4xl font-bold gradient-text">Curated Gear for Every Dog Moment</h1>
+        <p class="mt-4 text-lg">Shop premium gear and flexible care plans designed to simplify daily life.</p>
+        <a href="#shop" class="mt-6 inline-block bg-white text-primary px-6 py-3 rounded-full font-semibold">Shop Now</a>
+      </div>
+    </section>
+
+    <!-- Shop by Need -->
+    <section aria-label="Shop by Need" class="py-16 bg-neutral-50">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-2xl font-heading font-bold mb-6">Shop by Need</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-white rounded-2xl p-6 border border-neutral-200 hover:shadow-xl transition-shadow">
+            <img src="/images/shop/treats.jpg" alt="Healthy Treats" class="w-full h-40 object-cover rounded mb-4" />
+            <h3 class="font-semibold">Healthy Treats</h3>
+            <p class="text-sm text-neutral-600">Tasty, nutritious rewards.</p>
+            <div class="mt-2 text-primary font-semibold">$9.99</div>
+          </div>
+          <div class="bg-white rounded-2xl p-6 border border-neutral-200 hover:shadow-xl transition-shadow">
+            <img src="/images/shop/beds.jpg" alt="Cozy Beds" class="w-full h-40 object-cover rounded mb-4" />
+            <h3 class="font-semibold">Cozy Beds</h3>
+            <p class="text-sm text-neutral-600">Luxurious napping spots.</p>
+            <div class="mt-2 text-primary font-semibold">$64.99</div>
+          </div>
+          <div class="bg-white rounded-2xl p-6 border border-neutral-200 hover:shadow-xl transition-shadow">
+            <img src="/images/shop/grooming.jpg" alt="Grooming Kit" class="w-full h-40 object-cover rounded mb-4" />
+            <h3 class="font-semibold">Grooming Kit</h3>
+            <p class="text-sm text-neutral-600">Everything for a fresh coat.</p>
+            <div class="mt-2 text-primary font-semibold">$24.99</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Care Plans -->
+    <section aria-label="Care Plans" class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-2xl font-heading font-bold mb-6">Care Plans</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-neutral-50 border border-neutral-200 rounded-2xl p-6 text-center">
+            <h3 class="font-semibold mb-2">Starter Care</h3>
+            <div class="text-2xl font-bold mb-2">$9/mo</div>
+            <ul class="text-sm text-neutral-600 mb-4 text-left mx-auto" style="max-width: 240px">
+              <li>Basic routines</li>
+              <li>Product recommendations</li>
+              <li>Monthly update</li>
+            </ul>
+            <a href="#" class="inline-block bg-primary text-white px-4 py-2 rounded-full">Start Free Trial</a>
+          </div>
+          <div class="bg-neutral-50 border border-neutral-200 rounded-2xl p-6 text-center">
+            <h3 class="font-semibold mb-2">Premium Care</h3>
+            <div class="text-2xl font-bold mb-2">$19/mo</div>
+            <ul class="text-sm text-neutral-600 mb-4 text-left mx-auto" style="max-width: 240px">
+              <li>Advanced routines</li>
+              <li>Weekly tips</li>
+              <li>VIP chat</li>
+            </ul>
+            <a href="#" class="inline-block bg-primary text-white px-4 py-2 rounded-full">Start Free Trial</a>
+          </div>
+          <div class="bg-neutral-50 border border-neutral-200 rounded-2xl p-6 text-center">
+            <h3 class="font-semibold mb-2">Ultimate Wellness</h3>
+            <div class="text-2xl font-bold mb-2">$29/mo</div>
+            <ul class="text-sm text-neutral-600 mb-4 text-left mx-auto" style="max-width: 240px">
+              <li>All features</li>
+              <li>Personal vet Q&A</li>
+              <li>Milestone kits</li>
+            </ul>
+            <a href="#" class="inline-block bg-primary text-white px-4 py-2 rounded-full">Start Free Trial</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-neutral-900 text-white py-8">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div>
+        <strong>PawLux</strong>
+        <p class="text-neutral-400 text-sm mt-2">Premium gear, trusted guidance.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">Stay Connected</h4>
+        <div class="flex gap-3 text-neutral-400">
+          <span aria-label="instagram" class="w-8 h-8 rounded-full bg-neutral-700 flex items-center justify-center">IG</span>
+          <span aria-label="facebook" class="w-8 h-8 rounded-full bg-neutral-700 flex items-center justify-center">FB</span>
+        </div>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">Newsletter</h4>
+        <p class="text-neutral-400 text-sm mb-2">Get tips and deals in your inbox.</p>
+        <form onsubmit="return false;" aria-label="newsletter">
+          <input aria-label="email" type="email" placeholder="Email address" class="w-full p-2 border border-neutral-600 rounded" />
+        </form>
+      </div>
+    </div>
+  </footer>
+  <script>
+    // Simple interactions
+    const sections = document.querySelectorAll('section, footer');
+    sections.forEach(s => { s.style.opacity = '0'; s.style.transform = 'translateY(20px)'; });
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.style.transition = 'all 600ms'; e.target.style.opacity = '1'; e.target.style.transform = 'none'; } });
+    }, { threshold: 0.1 });
+    sections.forEach(s => io.observe(s));
+  </script>
+</body>
+</html>
