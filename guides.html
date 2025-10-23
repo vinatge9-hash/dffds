@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PawLux Guides</title>
+  <meta name="description" content="Dog Care Guides: practical, bite-sized care content backed by experts." />
+  <meta property="og:title" content="PawLux Guides" />
+  <meta property="og:description" content="Clear routines and expert tips tailored to your dog's life stage." />
+  <meta property="og:image" content="/images/og/pawlux-guides.jpg" />
+  <meta name="theme-color" content="#7C3AED" />
+  <link rel="icon" href="/favicon.ico" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#7C3AED',
+            secondary: '#14B8A6'
+          },
+          fontFamily: {
+            display: ['Poppins','ui-sans-serif', 'system-ui'],
+            heading: ['Montserrat','ui-sans-serif','system-ui'],
+            body: ['Inter','ui-sans-serif','system-ui']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: Inter, system-ui, sans-serif; }
+    .gradient-text { background: linear-gradient(135deg, #7C3AED 0%, #14B8A6 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "PawLux Guides",
+    "description": "Dog Care Guides: practical, bite-sized care content backed by experts.",
+    "keywords": ["dog care","guides","training","nutrition","grooming"]
+  }
+  </script>
+</head>
+<body class="bg-neutral-50 text-neutral-900">
+  <a href="#main-content" class="sr-only focus:not-sr-only absolute left-4 top-2 bg-primary text-white px-3 py-2 rounded">Skip to content</a>
+  <header class="w-full fixed top-0 z-40">
+    <nav class="bg-white/90 backdrop-blur-md shadow-md px-4 md:px-8 py-4 flex items-center justify-between">
+      <a href="/index.html" class="text-2xl font-heading font-bold text-primary">PawLux</a>
+      <div class="hidden md:flex gap-8 items-center">
+        <a href="/index.html">Home</a>
+        <a href="/guides.html" class="text-primary">Guides</a>
+        <a href="/shop.html">Shop</a>
+        <a href="/community.html">Community</a>
+      </div>
+    </nav>
+  </header>
+  <main id="main-content" class="pt-28" aria-label="Main content">
+    <section aria-label="Guides intro" class="py-12">
+      <div class="max-w-7xl mx-auto px-6 text-center">
+        <h1 class="text-4xl md:text-5xl font-heading font-bold mb-3">Dog Care Guides</h1>
+        <p class="text-neutral-600 mb-8">Practical, bite-sized care content you can trust.</p>
+      </div>
+    </section>
+    <section aria-label="Guide cards" class="py-8 bg-neutral-50">
+      <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {"guide_card_1"}
+        <article class="bg-white rounded-2xl p-6 border border-neutral-200 hover:shadow-xl transition-shadow">
+          <img src="/images/guides/first-aid.jpg" alt="First Aid for Dogs" class="w-full h-40 object-cover rounded mb-3" />
+          <h3 class="font-semibold text-lg mb-1">First Aid for Dogs</h3>
+          <p class="text-sm text-neutral-600">Quick steps to manage injuries calmly.</p>
+        </article>
+        <article class="bg-white rounded-2xl p-6 border border-neutral-200 hover:shadow-xl transition-shadow">
+          <img src="/images/guides/training-ml.jpg" alt="Foundations of Training" class="w-full h-40 object-cover rounded mb-3" />
+          <h3 class="font-semibold text-lg mb-1">Foundations of Training</h3>
+          <p class="text-sm text-neutral-600">Gentle, effective techniques for everyday success.</p>
+        </article>
+        <article class="bg-white rounded-2xl p-6 border border-neutral-200 hover:shadow-xl transition-shadow">
+          <img src="/images/guides/nutrition.jpg" alt="Nutrition Essentials" class="w-full h-40 object-cover rounded mb-3" />
+          <h3 class="font-semibold text-lg mb-1">Nutrition Essentials</h3>
+          <p class="text-sm text-neutral-600">Balanced feeding for age and energy needs.</p>
+        </article>
+        <article class="bg-white rounded-2xl p-6 border border-neutral-200 hover:shadow-xl transition-shadow">
+          <img src="/images/guides/vet-wellness.jpg" alt="Vet & Wellness" class="w-full h-40 object-cover rounded mb-3" />
+          <h3 class="font-semibold text-lg mb-1">Vet & Wellness</h3>
+          <p class="text-sm text-neutral-600">Preventive care and milestone checklists.</p>
+        </article>
+        <article class="bg-white rounded-2xl p-6 border border-neutral-200 hover:shadow-xl transition-shadow">
+          <img src="/images/guides/seasonal-care.jpg" alt="Seasonal Care" class="w-full h-40 object-cover rounded mb-3" />
+          <h3 class="font-semibold text-lg mb-1">Seasonal Care</h3>
+          <p class="text-sm text-neutral-600">Routines for weather and milestone changes.</p>
+        </article>
+      </div>
+    </section>
+    <section aria-label="Browse by need" class="py-12">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="flex flex-wrap items-end justify-between mb-6">
+          <h2 class="text-2xl font-heading font-bold">Browse by Need</h2>
+          <span class="text-sm text-neutral-600">Training • Nutrition • Grooming • Vet & Wellness</span>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+          <div class="bg-white rounded-xl p-4 text-center border border-neutral-200">Training</div>
+          <div class="bg-white rounded-xl p-4 text-center border border-neutral-200">Nutrition</div>
+          <div class="bg-white rounded-xl p-4 text-center border border-neutral-200">Grooming</div>
+          <div class="bg-white rounded-xl p-4 text-center border border-neutral-200">Vet & Wellness</div>
+          <div class="bg-white rounded-xl p-4 text-center border border-neutral-200">Seasonal Care</div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-neutral-900 text-white py-8 mt-8">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div>
+        <strong>PawLux</strong>
+        <p class="text-neutral-400 text-sm mt-2">Luxurious guidance, approachable for every dog family.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">Guides</h4>
+        <ul class="space-y-2 text-neutral-300 text-sm">
+          <li><a href="/guides.html" class="hover:text-white">All Guides</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">Join the Community</h4>
+        <p class="text-neutral-400 text-sm">Share stories, get expert Q&A access.</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    // simple fade-in for sections
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.style.opacity = 1, e.target.style.transform = 'none'; });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('section, header, footer').forEach(el => {
+      el.style.opacity = '0'; el.style.transform = 'translateY(20px)'; obs.observe(el);
+    });
+  </script>
+</body>
+</html>
