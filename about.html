@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About PawLux</title>
+  <meta name="description" content="Learn about PawLux values, science-backed care, and our pet-loving team." />
+  <meta property="og:title" content="About PawLux" />
+  <meta property="og:description" content="Ethics, science, and care—designed for dogs and their families." />
+  <meta property="og:image" content="/images/og/pawlux-about.jpg" />
+  <meta name="theme-color" content="#7C3AED" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .gradient-text { background: linear-gradient(135deg, #7C3AED 0%, #14B8A6 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "PawLux",
+    "description": "PawLux delivers luxurious, trustworthy canine care guidance and curated products.",
+    "founder": {
+      "@type": "Person",
+      "name": "PawLux Founding Team"
+    }
+  }
+  </script>
+</head>
+<body class="bg-neutral-50 text-neutral-900">
+  <header class="fixed w-full top-0 bg-white/90 backdrop-blur-md shadow-md z-40">
+    <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="/index.html" class="text-2xl font-bold text-primary">PawLux</a>
+      <div class="hidden md:flex gap-8">
+        <a href="/index.html">Home</a>
+        <a href="/guides.html">Guides</a>
+        <a href="/shop.html">Shop</a>
+        <a href="/community.html">Community</a>
+        <a href="/about.html" class="text-primary">About</a>
+      </div>
+    </nav>
+  </header>
+  <main id="main-content" class="pt-28" aria-label="Main content">
+    <section class="py-16 bg-neutral-100 relative" aria-label="Brand story">
+      <div class="absolute inset-0 bg-gradient-to-br from-primary/10 to-secondary/10 opacity-60"></div>
+      <div class="relative z-10 max-w-5xl mx-auto px-6 text-center">
+        <h1 class="text-3xl md:text-4xl font-bold gradient-text mb-4">Brand Story</h1>
+        <p class="text-neutral-700">PawLux was founded to simplify the dog care landscape: science-backed guidance, premium-but-approachable products, and joyful routines for every dog family.</p>
+      </div>
+    </section>
+
+    <section class="py-12" aria-label="Ethics & Expertise">
+      <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+        <div class="bg-white p-6 rounded-xl shadow border border-neutral-200">
+          <h3 class="font-semibold mb-2">Science meets care</h3>
+          <p class="text-sm text-neutral-600">We translate veterinary and behavioral science into practical routines for dogs of all ages and breeds.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow border border-neutral-200">
+          <h3 class="font-semibold mb-2">Ethical commitments</h3>
+          <p class="text-sm text-neutral-600">Cruelty-free, transparent sourcing, and honest product guidance.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-neutral-900 text-white py-8">
+    <div class="max-w-7xl mx-auto px-6 text-center">© PawLux · All rights reserved.</div>
+  </footer>
+  <script>
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.style.opacity = 1; e.target.style.transform = 'none'; } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('section, footer').forEach(el => { el.style.opacity = '0'; el.style.transform = 'translateY(20px)'; io.observe(el); });
+  </script>
+</body>
+</html>
