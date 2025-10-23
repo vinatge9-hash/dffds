@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PawLux - Home</title>
+  <meta name="description" content="PawLux delivers luxurious, trustworthy canine care guidance and curated products through innovative tools that feel approachable for every dog family." />
+  <meta property="og:title" content="PawLux - Luxurious Dog Care, Trusted Guidance" />
+  <meta property="og:description" content="Premium, approachable dog care guidance and curated products for every dog family." />
+  <meta property="og:image" content="/images/og/pawlux-home.jpg" />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#7C3AED" />
+  <link rel="icon" href="/favicon.ico" />
+  <!-- Tailwind + Config -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              DEFAULT: '#7C3AED',
+              50: '#f5f0ff',
+              100: '#ecdfff',
+              200: '#d9baff',
+              300: '#c488ff',
+              400: '#a55aff',
+              500: '#7C3AED',
+              600: '#6a2bd0',
+              700: '#5a22b5',
+              800: '#4b1f99',
+              900: '#381a74'
+            },
+            secondary: {
+              DEFAULT: '#14B8A6'
+            },
+            accent: {
+              DEFAULT: '#F59E0B'
+            }
+          },
+          fontFamily: {
+            display: ['Poppins','ui-sans-serif','system-ui'],
+            heading: ['Montserrat','ui-sans-serif','system-ui'],
+            body: ['Inter','ui-sans-serif','system-ui']
+          },
+          animation: {
+            'fade-in-up': 'fadeInUp 0.8s ease-out',
+            'fade-in': 'fadeIn 0.6s ease-out',
+            'gradientShift': 'gradientShift 3s ease infinite'
+          },
+          keyframes: {
+            fadeInUp: {
+              '0%': { opacity: '0', transform: 'translateY(20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' }
+            },
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' }
+            },
+            gradientShift: {
+              '0%,100%': { backgroundPosition: '0% 50%' },
+              '50%': { backgroundPosition: '100% 50%' }
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @font-face { font-family: 'Poppins'; src: local('Poppins'), local('Poppins-SemiBold'); }
+    @font-face { font-family: 'Montserrat'; src: local('Montserrat'), local('Montserrat-SemiBold'); }
+    @font-face { font-family: 'Inter'; src: local('Inter'), local('Inter-Semibold'); }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    :root { --radius: 12px; }
+    .gradient-text { background: linear-gradient(135deg, #7C3AED 0%, #14B8A6 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .glass { background: rgba(255,255,255,.65); backdrop-filter: saturate(1.1) blur(6px); -webkit-backdrop-filter: saturate(1.1) blur(6px); }
+    .paw-pulse { animation: pawPulse 2s ease-in-out infinite; }
+    @keyframes pawPulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; transition: none !important; }
+    }
+  </style>
+  <!-- Structured Data for Local Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "PawLux",
+    "url": "https://www.pawlux.example",
+    "logo": "https://www.pawlux.example/images/logo.png",
+    "description": "PawLux delivers luxurious, trustworthy canine care guidance and curated products.",
+    "sameAs": [
+      "https://www.facebook.com/pawlux",
+      "https://www.instagram.com/pawlux",
+      "https://www.youtube.com/pawlux"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "123 Pet Lane",
+      "addressLocality": "Petville",
+      "addressRegion": "CA",
+      "postalCode": "94000",
+      "addressCountry": "US"
+    }
+  }
+  </script>
+</head>
+<body class="bg-neutral-50 text-neutral-900">
+  <!-- Skip to content for accessibility -->
+  <a href="#main-content" class="sr-only focus:not-sr-only absolute left-4 top-2 bg-primary text-white px-3 py-2 rounded">Skip to content</a>
+
+  <!-- Navbar -->
+  <header class="w-full fixed top-0 z-50">
+    <nav aria-label="Main navigation" class="bg-white/90 backdrop-blur-md/70 shadow-md px-4 md:px-8 py-4 flex items-center justify-between gap-4">
+      <a href="/index.html" class="flex items-center gap-2 text-2xl font-heading font-bold text-primary" aria-label="PawLux home">
+        PawLux
+      </a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="/index.html" class="text-neutral-800 hover:text-primary">Home</a>
+        <a href="/guides.html" class="text-neutral-800 hover:text-primary">Guides</a>
+        <a href="/shop.html" class="text-neutral-800 hover:text-primary">Shop</a>
+        <a href="/community.html" class="text-neutral-800 hover:text-primary">Community</a>
+        <a href="/about.html" class="text-neutral-800 hover:text-primary">About</a>
+        <a href="#signup" class="ml-2 bg-primary text-white px-4 py-2 rounded-full hover:shadow-lg">Get Started</a>
+      </div>
+      <button id="mobile-menu-toggle" class="md:hidden w-8 h-8 flex flex-col justify-between" aria-label="Open menu">
+        <span class="block h-0.5 bg-current"></span>
+        <span class="block h-0.5 bg-current"></span>
+        <span class="block h-0.5 bg-current"></span>
+      </button>
+    </nav>
+    <!-- Mobile Drawer -->
+    <div id="mobile-drawer" class="md:hidden fixed top-0 right-0 h-full w-64 bg-white shadow-2xl transform translate-x-full transition-transform duration-300 z-40" aria-label="Mobile navigation">
+      <div class="p-6 space-y-4">
+        <a href="/index.html" class="block text-neutral-800">Home</a>
+        <a href="/guides.html" class="block text-neutral-800">Guides</a>
+        <a href="/shop.html" class="block text-neutral-800">Shop</a>
+        <a href="/community.html" class="block text-neutral-800">Community</a>
+        <a href="/about.html" class="block text-neutral-800">About</a>
+        <a href="#signup" class="block mt-2 bg-primary text-white px-4 py-2 rounded-full">Get Started</a>
+      </div>
+    </div>
+    <div id="drawer-overlay" class="md:hidden fixed inset-0 bg-black/40 opacity-0 pointer-events-none transition-opacity duration-300" aria-hidden="true"></div>
+  </header>
+
+  <main id="main-content" class="pt-28" aria-label="Main content">
+
+    <!-- Hero Section -->
+    <section id="hero" aria-label="Hero" class="relative min-h-screen flex items-center justify-center overflow-hidden bg-black/60">
+      <div class="absolute inset-0 z-0">
+        <video playsinline autoplay muted loop class="w-full h-full object-cover" aria-label="Joyful dog care routines video" poster="/images/hero-pawlux-poster.jpg">
+          <source src="/videos/pawlux-hero-routines.mp4" type="video/mp4" />
+        </video>
+        <div class="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40"></div>
+      </div>
+      <div class="relative z-10 max-w-4xl mx-auto px-6 text-center text-white py-24">
+        <h1 class="text-4xl md:text-6xl lg:text-7xl font-display font-black gradient-text mb-6 leading-tight">PawLux makes luxurious dog care both effortless and trustworthy.</h1>
+        <p class="text-lg md:text-xl max-w-2xl mx-auto font-light text-white/95 mb-8">Luxury, trust, and practical dog care—curated for your life with PawLux.</p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="#quiz" class="px-6 py-3 rounded-full bg-gradient-to-r from-primary to-secondary text-white font-semibold hover:scale-105 transition-transform">Take the 3-Minute Care Quiz</a>
+          <a href="#why_pawlux" class="px-6 py-3 rounded-full border-2 border-white text-white font-semibold hover:bg-white hover:text-primary transition duration-300">Browse Guides</a>
+        </div>
+        <div class="mt-8 text-sm opacity-90">Scroll for more or use the navigation above</div>
+      </div>
+    </section>
+
+    <!-- Why PawLux -->
+    <section id="why_pawlux" aria-label="Why PawLux" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-heading font-bold mb-2">Why PawLux</h2>
+          <p class="text-neutral-600">Premium guidance paired with curated products and effortless onboarding.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <article class="group bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300 border border-neutral-200">
+            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-secondary text-white flex items-center justify-center mb-4">
+              <!-- sparkle icon -->
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l2.4 4.9L19 10l-4 2.1L12 18l-3-5.9L5 10l4.6-2.1L12 3z"/></svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Expert-backed routines</h3>
+            <p class="text-neutral-600">Science-informed guidance tailored to your dog’s life stage.</p>
+          </article>
+          <article class="group bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300 border border-neutral-200">
+            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-secondary text-white flex items-center justify-center mb-4">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l3 6 7 .9-5 4.9 1.4 7-6.4-3.5L6 23l1-9L2 9.9l7-.9 3-6z"/></svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Curated premium products</h3>
+            <p class="text-neutral-600">Premium gear hand-picked for daily life and wellness.</p>
+          </article>
+          <article class="group bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300 border border-neutral-200">
+            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-secondary text-white flex items-center justify-center mb-4">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12h16M12 4v16"/></svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Effortless onboarding</h3>
+            <p class="text-neutral-600">Personalized paths that feel magical, not overwhelming.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Care Quiz -->
+    <section id="quiz" aria-label="Personalized care quiz" class="py-16 bg-neutral-50" style="scroll-margin-top:80px">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <h3 class="text-2xl md:text-3xl font-heading font-bold mb-4">Your Dog, Your Plan</h3>
+        <p class="text-neutral-600 mb-8">Answer a few quick questions and get a tailored care plan.</p>
+        <form aria-label="Care quiz form" class="grid grid-cols-1 gap-4 justify-items-center" onsubmit="return false;">
+          <div class="w-full">
+            <label class="block text-sm font-semibold mb-1" for="dog-age">What is your dog's age?</label>
+            <select id="dog-age" class="w-full p-3 border border-neutral-300 rounded-md" required>
+              <option>Puppy (under 1)</option>
+              <option>Adult (1-7)</option>
+              <option>Senior (7+)</option>
+            </select>
+          </div>
+          <div class="w-full">
+            <label class="block text-sm font-semibold mb-1" for="focus-area">Which area would you like guidance on first?</label>
+            <select id="focus-area" class="w-full p-3 border border-neutral-300 rounded-md" required>
+              <option>Training</option>
+              <option>Nutrition</option>
+              <option>Grooming</option>
+              <option>Vet & Wellness</option>
+            </select>
+          </div>
+          <button id="get-plan" class="mt-2 px-6 py-3 rounded-full bg-gradient-to-r from-primary to-secondary text-white font-semibold" aria-label="Get My Plan">Get My Plan</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" aria-label="Testimonials" class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-8">
+          <h2 class="text-3xl md:text-4xl font-heading font-bold mb-2">What PawLux Families Say</h2>
+          <p class="text-neutral-600">Real stories from dog parents who found trusted routines and joy.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <blockquote class="p-6 rounded-xl bg-neutral-50 border border-neutral-100">"PawLux gave us a simple, beautiful routine that actually sticks."</blockquote>
+          <blockquote class="p-6 rounded-xl bg-neutral-50 border border-neutral-100">"Premium products that my picky pup actually enjoys."</blockquote>
+          <blockquote class="p-6 rounded-xl bg-neutral-50 border border-neutral-100">"Clear guidance and less overwhelm—finally!"</blockquote>
+          <blockquote class="p-6 rounded-xl bg-neutral-50 border border-neutral-100">"Puppy transition was smoother with their expert tips."</blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section id="cta_final" aria-label="Call to action" class="py-20 bg-gradient-to-r from-primary to-secondary text-white text-center">
+      <div class="max-w-3xl mx-auto px-6">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">Ready to elevate your dog's care?</h2>
+        <p class="mb-6">Join PawLux today and get instant access to personalized care plans and curated gear.</p>
+        <a href="#signup" class="inline-block bg-white text-primary px-6 py-3 rounded-full font-semibold">Start Free Trial</a>
+      </div>
+    </section>
+  </main>
+
+  <footer aria-label="Site footer" class="bg-neutral-900 text-white mt-12">
+    <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div>
+        <strong class="text-xl">PawLux</strong>
+        <p class="text-neutral-300 mt-2">Luxurious care. Trustworthy guidance. Joyful routines.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">Shop</h4>
+        <ul class="space-y-2 text-neutral-300">
+          <li><a href="#" class="hover:text-white">Curated Gear</a></li>
+          <li><a href="#" class="hover:text-white">Care Plans</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">Guides</h4>
+        <ul class="space-y-2 text-neutral-300">
+          <li><a href="/guides.html" class="hover:text-white">Dog Care Guides</a></li>
+          <li><a href="#" class="hover:text-white">Training Tips</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">Community</h4>
+        <ul class="space-y-2 text-neutral-300">
+          <li><a href="/community.html" class="hover:text-white">Stories & Q&A</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-neutral-700 py-4 text-center text-neutral-400 text-sm">© 2025 PawLux. All rights reserved.</div>
+  </footer>
+
+  <script>
+    // Mobile drawer toggle
+    const toggleBtn = document.getElementById('mobile-menu-toggle');
+    const drawer = document.getElementById('mobile-drawer');
+    const overlay = document.getElementById('drawer-overlay');
+    toggleBtn?.addEventListener('click', () => {
+      const open = drawer.style.transform !== 'translateX(0%)';
+      drawer.style.transform = open ? 'translateX(0%)' : 'translateX(100%)';
+      overlay.style.opacity = open ? '1' : '0';
+      overlay.style.pointerEvents = open ? 'auto' : 'none';
+    });
+    overlay?.addEventListener('click', () => {
+      drawer.style.transform = 'translateX(100%)';
+      overlay.style.opacity = '0';
+      overlay.style.pointerEvents = 'none';
+    });
+
+    // Scroll reveal
+    const sections = document.querySelectorAll('section, header, footer, main');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) e.target.style.opacity = 1, e.target.style.transform = 'none';
+      });
+    }, { threshold: 0.1 });
+    sections.forEach(sec => {
+      sec.style.opacity = '0';
+      sec.style.transform = 'translateY(20px)';
+      observer.observe(sec);
+    });
+  </script>
+</body>
+</html>
